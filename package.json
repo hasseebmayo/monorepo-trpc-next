@@ -6,7 +6,10 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "api:dev": "pnpm --filter=@workspace/api dev",
+    "web:dev": "pnpm --filter=@workspace/web dev",
+    "type-check": "turbo type-check"
   },
   "devDependencies": {
     "@workspace/eslint-config": "workspace:*",
