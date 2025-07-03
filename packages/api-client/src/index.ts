@@ -1,7 +1,7 @@
-import { createTRPCReact } from "@trpc/react-query";
+import { createTRPCReact, type CreateTRPCReact } from "@trpc/react-query";
 import type { AppRouter } from "@workspace/api/types";
-import type { CreateTRPCReact } from "@trpc/react-query";
 
+// Create the tRPC client with explicit type annotation to resolve TypeScript inference issues
 export const trpc: CreateTRPCReact<AppRouter, unknown> = createTRPCReact<AppRouter>();
 
 export type { AppRouter } from "@workspace/api/types";
